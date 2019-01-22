@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+ Loco ios export: iOS plural rules
+ Release: Working copy
+ Locale: en, English
+ Exported at: Mon, 05 Nov 2018 19:16:37 +0000
+-->
+<plist version="1.0">
+    <dict>
+        <key>adults</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Adult</string>
+                <key>other</key>
+                <string>%d Adults</string>
+            </dict>
+        </dict>
+        <key>age_format</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d year old</string>
+                <key>other</key>
+                <string>%d years old</string>
+            </dict>
+        </dict>
+        <key>babies</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Baby</string>
+                <key>other</key>
+                <string>%d Babies</string>
+            </dict>
+        </dict>
+        <key>children</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Child</string>
+                <key>other</key>
+                <string>%d Children</string>
+            </dict>
+        </dict>
+        <key>days</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Day</string>
+                <key>other</key>
+                <string>%d Days</string>
+            </dict>
+        </dict>
+        <key>guests</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d Guest</string>
+                <key>other</key>
+                <string>%d Guests</string>
+            </dict>
+        </dict>
+        <key>months</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d month</string>
+                <key>other</key>
+                <string>%d months</string>
+            </dict>
+        </dict>
+        <key>years</key>
+        <dict>
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string>
+                <key>one</key>
+                <string>%d year</string>
+                <key>other</key>
+                <string>%d years</string>
+            </dict>
+        </dict>
+    </dict>
+</plist>

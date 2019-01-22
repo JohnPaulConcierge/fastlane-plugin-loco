@@ -1,0 +1,169 @@
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: John Paul
+ * Release: Working copy
+ * Locale: en-US, English (USA)
+ * Exported at: Tue, 22 Jan 2019 15:32:19 +0000
+ */
+
+/* loco: a */
+"onboarding_sign_in_title" = "SIGN IN";
+
+/* loco: a */
+"onboarding_register_title" = "REGISTER";
+
+/* loco: a */
+"placeholder_title" = "TITLE";
+
+/* loco: a */
+"placeholder_first_name" = "FIRST NAME";
+
+/* loco: a */
+"placeholder_last_name" = "LAST NAME";
+
+/* loco: a */
+"placeholder_email" = "EMAIL";
+
+/* loco: a */
+"placeholder_sign_in_password" = "PASSWORD";
+
+/* loco: a */
+"placeholder_register_password" = "SET A PASSWORD";
+
+/* loco: a */
+"show" = "Show";
+
+/* loco: a */
+"hide" = "Hide";
+
+/* loco: a */
+"forgot_password" = "Forgot password";
+
+/* loco: a */
+"use_touch_id" = "Use Touch-ID";
+
+/* loco: a */
+"title" = "Title";
+
+/* loco: a */
+"title_dr" = "Dr.";
+
+/* loco: a */
+"title_mr" = "Mr.";
+
+/* loco: a */
+"title_mrs" = "Mrs.";
+
+/* loco: a */
+"title_ms" = "Ms.";
+
+/* loco: a */
+"sign_in_button" = "SIGN IN";
+
+/* loco: a */
+"create_account_button" = "CREATE MY ACCOUNT";
+
+/* loco: a */
+"continue_button" = "CONTINUE";
+
+/* loco: a */
+"invalid_email" = "Email is not valid";
+
+/* loco: a */
+"please_fill_all" = "All fields are required";
+
+/* loco: a */
+"error_default" = "Something went wrong.\nPlease try again later";
+
+/* loco: a */
+"error_credentials" = "Invalid credentials";
+
+/* loco: a */
+"onboarding_register_success_title" = "Congratulations,\nYour account has been created";
+
+/* loco: a */
+"onboarding_register_success_subtitle" = "You know have access to a world of privileges.";
+
+/* loco: a */
+"onboarding_register_success_button" = "Set up my account";
+
+/* loco: a */
+"skip_button" = "SKIP";
+
+/* loco: a */
+"onboarding_preferences_title" = "SELECT YOUR PREFERENCES";
+
+/* loco: a */
+"onboarding_alerts_title" = "SETUP YOUR ALERTS";
+
+/* loco: a */
+"onboarding_alerts_subtitle" = "CREATE ALERTS FOR THOSE SPECIAL DATES WITH YOUR LOVED ONES";
+
+/* loco: a */
+"onboarding_alerts_add_date" = "ADD ANOTHER ALERT";
+
+/* loco: a */
+"onboarding_alerts_done" = "I'M ALL SET!";
+
+/* loco: a */
+"onboarding_alerts_your_birthday" = "Starting with you, what's your birthdate?";
+
+/* loco: a */
+"onboarding_alerts_date_to_add" = "What is the date to remember?";
+
+/* loco: a */
+"alert-subtitle-time-years-birthday-plural" = "Turns %d";
+
+/* loco: a */
+"alert-subtitle-time-years-other-plural" = "%d years";
+
+/* loco: a */
+"alert_subtitle_anniversary" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_birthday" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_default" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_future" = "%@ left";
+
+/* loco: a */
+"alert_subtitle_other" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_time_day" = "in %d day";
+
+/* loco: a */
+"alert_subtitle_time_day-plural" = "in %d days";
+
+/* loco: a */
+"alert_subtitle_time_day_next" = "tomorrow";
+
+/* loco: a */
+"alert_subtitle_time_month" = "in %d month";
+
+/* loco: a */
+"alert_subtitle_time_month-plural" = "in %d months";
+
+/* loco: a */
+"alert_subtitle_time_month_next" = "next month";
+
+/* loco: a */
+"alert_subtitle_time_years_anniversary" = "%d year";
+
+/* loco: a */
+"alert_subtitle_time_years_birthday" = "Turns %d";
+
+/* loco: a */
+"alert_subtitle_time_years_other" = "%d year";
+
+/* loco: a */
+"register_success_title" = "Congratulations,\nYour account has been created";
+
+/* loco: a */
+"register_success_description" = "You know have access to a world of privileges.";
+
+/* loco: a */
+"register_success_button" = "Setup my account";

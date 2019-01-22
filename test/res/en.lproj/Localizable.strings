@@ -1,0 +1,89 @@
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: strings.xml conversion
+ * Release: Working copy
+ * Locale: en, English
+ * Exported by: Unregistered user
+ * Exported at: Tue, 22 Jan 2019 15:44:32 +0100
+ */
+
+/*  */
+"around_me" = "Around me";
+
+/*  */
+"arrival" = "Arrival";
+
+/*  */
+"at_home" = "At home";
+
+/*  */
+"back" = "Back";
+
+/*  */
+"book_now" = "Book now";
+
+/*  */
+"call" = "Call";
+
+/*  */
+"last_four" = "Last 4 digits of your Card Number";
+
+/*  */
+"check_in" = "Check-in";
+
+/*  */
+"check_out" = "Check-out";
+
+/*  */
+"cities_ask_concierge_button" = "Ask your Concierge";
+
+/*  */
+"cities_ask_concierge_title" = "Can't find what you are looking for?";
+
+/*  */
+"city" = "City";
+
+/*  */
+"city_type_bar" = "Nightlife";
+
+/*  */
+"city_type_event_ticketing" = "Culture";
+
+/*  */
+"city_type_hotel" = "Hotels";
+
+/*  */
+"city_type_restaurant" = "Dining";
+
+/*  */
+"city_type_shopping" = "Shopping";
+
+/*  */
+"conditions" = "Conditions";
+
+/*  */
+"country" = "Country";
+
+/*  */
+"create_account" = "Register";
+
+/*  */
+"date" = "Date";
+
+/*  */
+"delete" = "Delete";
+
+/*  */
+"departure" = "Departure";
+
+/*  */
+"done" = "Done";
+
+/*  */
+"drawer_close" = "Open menu";
+
+/*  */
+"drawer_open" = "Close menu";
+
+/*  */
+"email" = "Email";

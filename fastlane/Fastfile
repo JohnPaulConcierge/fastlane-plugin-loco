@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+lane :test_ios do
+  loco(conf_file_path: 'fastlane/LocoFile.ios.yml')
+end
+
+lane :test_android do
+  loco(conf_file_path: 'fastlane/LocoFile.android.yml')
+end

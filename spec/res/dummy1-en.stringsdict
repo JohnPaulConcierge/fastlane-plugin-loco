@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+ Loco ios export: iOS plural rules
+ Project: John Paul
+ Release: Working copy
+ Locale: en-US, English (USA)
+ Exported by: Guillaume Aquilina
+ Exported at: Wed, 23 Jan 2019 14:31:00 +0000 
+-->
+<plist version="1.0">
+    <dict> 
+        <key>adults</key>
+        <dict> 
+            <key>NSStringLocalizedFormatKey</key>
+            <string>%#@items@</string>
+            <key>items</key>
+            <dict>
+                <key>NSStringFormatSpecTypeKey</key>
+                <string>NSStringPluralRuleType</string>
+                <key>NSStringFormatValueTypeKey</key>
+                <string>d</string> 
+                <key>one</key>
+                <string>Adult</string> 
+                <key>other</key>
+                <string>Adults</string> 
+            </dict>
+        </dict> 
+    </dict>
+</plist>

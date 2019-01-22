@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Loco xml export: Android string resources
+ Project: Localizable.strings conversion
+ Release: Working copy
+ Locale: en, English
+ Exported by: Unregistered user
+ Exported at: Tue, 22 Jan 2019 15:40:56 +0100
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="around_me">Around me</string>
+    <string name="arrival">Arrival</string>
+    <string name="at_home">At home</string>
+    <string name="back">Back</string>
+    <string name="book_now">Book now</string>
+    <string name="call">Call</string>
+    <string name="last_four">Last 4 digits of your Card Number</string>
+    <string name="check_in">Check-in</string>
+    <string name="check_out">Check-out</string>
+    <string name="cities_ask_concierge_button">Ask your Concierge</string>
+    <string name="cities_ask_concierge_title">Can\'t find what you are looking for?</string>
+    <string name="city">City</string>
+    <string name="city_type_bar">Nightlife</string>
+    <string name="city_type_event_ticketing">Culture</string>
+    <string name="city_type_hotel">Hotels</string>
+    <string name="city_type_restaurant">Dining</string>
+    <string name="city_type_shopping">Shopping</string>
+    <string name="conditions">Conditions</string>
+    <string name="country">Country</string>
+    <string name="create_account">Register</string>
+    <string name="date">Date</string>
+    <string name="delete">Delete</string>
+    <string name="departure">Departure</string>
+    <string name="done">Done</string>
+    <string name="drawer_close">Open menu</string>
+    <string name="drawer_open">Close menu</string>
+    <string name="email">Email</string>
+
+    <plurals name="adults">
+        <item quantity="one">%d Adult</item>
+        <item quantity="other">%d Adults</item>
+    </plurals>
+    <plurals name="age_format">
+        <item quantity="one">%d year old</item>
+        <item quantity="other">%d years old</item>
+    </plurals>
+    <plurals name="babies">
+        <item quantity="one">%d Baby</item>
+        <item quantity="other">%d Babies</item>
+    </plurals>
+    <plurals name="children">
+        <item quantity="one">%d Child</item>
+        <item quantity="other">%d Children</item>
+    </plurals>
+    <plurals name="days">
+        <item quantity="one">%d Day</item>
+        <item quantity="other">%d Days</item>
+    </plurals>
+    <plurals name="guests">
+        <item quantity="one">%d Guest</item>
+        <item quantity="other">%d Guests</item>
+    </plurals>
+    <plurals name="months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+    <plurals name="years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+
+</resources>

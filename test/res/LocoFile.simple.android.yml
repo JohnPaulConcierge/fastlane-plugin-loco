@@ -1,0 +1,8 @@
+---
+# Defaults
+- locales:
+    - en
+  directory: test/results
+  platform: android
+  projects:
+    - key: dummy1

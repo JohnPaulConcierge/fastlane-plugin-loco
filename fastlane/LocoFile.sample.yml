@@ -1,0 +1,23 @@
+---
+# Defaults
+- locales:
+    - en
+    - fr
+  directory: fastlane/results
+  platform: android # ios | android
+  # A way to map a locale to the proper directory
+  mapping:
+    en: en
+    zh-hant-tw: rTW
+# This will create files named `table1`
+- table: Table1
+  # Using the projects below
+  projects:
+    - key: dummy # fill in with project 1 key
+      includes:
+        - where_.* # Only keys matching that regex will be included
+      excludes:
+        - option_parking # Keys matching that regex will be excluded
+    - key: dummy # fill in with project 2 key
+      includes:
+        - babies_.*

@@ -1,0 +1,173 @@
+/*
+ * Loco ios export: iOS Localizable.strings
+ * Project: John Paul
+ * Release: Working copy
+ * Locale: fr, French
+ * Exported at: Wed, 23 Jan 2019 11:42:09 +0000
+ */
+
+/* loco: a */
+"alert-subtitle-time-years-birthday-plural" = "Fête %d";
+
+/* loco: a */
+"alert-subtitle-time-years-other-plural" = "%d ans";
+
+/* loco: a */
+"alert_subtitle_anniversary" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_birthday" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_default" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_future" = "%@ restant";
+
+/* loco: a */
+"alert_subtitle_other" = "%1$@ %2$@";
+
+/* loco: a */
+"alert_subtitle_time_day" = "dans %d jour";
+
+/* loco: a */
+"alert_subtitle_time_day-plural" = "dans %d jours";
+
+/* loco: a */
+"alert_subtitle_time_day_next" = "demain";
+
+/* loco: a */
+"alert_subtitle_time_month" = "dans %d mois";
+
+/* loco: a */
+"alert_subtitle_time_month-plural" = "dans %d mois";
+
+/* loco: a */
+"alert_subtitle_time_month_next" = "le mois prochain";
+
+/* loco: a */
+"alert_subtitle_time_years_anniversary" = "%d ans";
+
+/* loco: a */
+"alert_subtitle_time_years_birthday" = "Fête %d";
+
+/* loco: a */
+"alert_subtitle_time_years_other" = "%d ans";
+
+/* loco: a */
+"continue_button" = "CONTINUER";
+
+/* loco: a */
+"create_account_button" = "CRÉER MON COMPTE";
+
+/* loco: a */
+"error_credentials" = "Authentification incorrecte";
+
+/* loco: a */
+"error_default" = "Un problème est survenu.\nVeuillez réessayer s'il vous plaît.";
+
+/* loco: a */
+"forgot_password" = "Mot de passe oublié";
+
+/* loco: a */
+"hide" = "Cacher";
+
+/* loco: a */
+"invalid_email" = "Adresse email non valide";
+
+/* loco: a */
+"onboarding_alerts_add_date" = "AJOUTER UNE ALERTE";
+
+/* loco: a */
+"onboarding_alerts_date_to_add" = "Quelle date souhaitez vous que l'on retienne ? ";
+
+/* loco: a */
+"onboarding_alerts_done" = "JE SUIS PRÊT !";
+
+/* loco: a */
+"onboarding_alerts_subtitle" = "CRÉEZ DES ALERTES POUR LES DATES QUI COMPTENT POUR VOUS ET VOS PROCHES";
+
+/* loco: a */
+"onboarding_alerts_title" = "CONFIGURER MES ALERTES ";
+
+/* loco: a */
+"onboarding_alerts_your_birthday" = "Commençons pas vous, quel est votre date de naissance ?";
+
+/* loco: a */
+"onboarding_preferences_title" = "SÉLECTIONNER MES PRÉFÉRENCES";
+
+/* loco: a */
+"onboarding_register_success_button" = "Configurer mon compte";
+
+/* loco: a */
+"onboarding_register_success_subtitle" = "Vous avez désormais accès à un monde de privilèges";
+
+/* loco: a */
+"onboarding_register_success_title" = "Félicitations, votre compte a bien été créé";
+
+/* loco: a */
+"onboarding_register_title" = "S'INSCRIRE";
+
+/* loco:59f8b52c820ee9aa5b8b4567
+ * Localizable.strings
+johnpaul2
+Created by Arthur Grellard on 23/10/2017.
+Copyright © 2017 johnpaul. All rights reserved. */
+"onboarding_sign_in_title" = "SE CONNECTER";
+
+/* loco: a */
+"placeholder_email" = "EMAIL";
+
+/* loco: a */
+"placeholder_first_name" = "PRÉNOM";
+
+/* loco: a */
+"placeholder_last_name" = "NOM";
+
+/* loco: a */
+"placeholder_register_password" = "CRÉER UN MOT DE PASSE ";
+
+/* loco: a */
+"placeholder_sign_in_password" = "MOT DE PASSE";
+
+/* loco: a */
+"placeholder_title" = "CIVILITÉ";
+
+/* loco: a */
+"please_fill_all" = "Tous les champs sont requis ";
+
+/* loco: a */
+"register_success_button" = "Configurer mon compte";
+
+/* loco: a */
+"register_success_description" = "Vous avez désormais accès à un monde de privilèges";
+
+/* loco: a */
+"register_success_title" = "Félicitations, votre compte a bien été créé";
+
+/* loco: a */
+"show" = "Afficher";
+
+/* loco: a */
+"sign_in_button" = "SE CONNECTER";
+
+/* loco: a */
+"skip_button" = "PASSER";
+
+/* loco: a */
+"title" = "Civilité";
+
+/* loco: a */
+"title_dr" = "Dr.";
+
+/* loco: a */
+"title_mr" = "M.";
+
+/* loco: a */
+"title_mrs" = "Mme.";
+
+/* loco: a */
+"title_ms" = "Mlle.";
+
+/* loco: a */
+"use_touch_id" = "Utiliser le Touch-ID";

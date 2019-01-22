@@ -1,0 +1,31 @@
+---
+# Defaults
+- locales:
+    - en
+    - fr
+  directory: test-results/spec
+  platform: ios
+- projects:
+    - key: dummy1
+      includes:
+        - hapi_option.*
+        - hapi_visas
+      excludes:
+        - hapi_option_parking
+    - key: dummy2
+      includes:
+        - placeholder_.*
+        - babies
+
+- table: Other
+  projects:
+    - key: dummy1
+      includes:
+        - hapi_option.*
+        - hapi_visas
+      excludes:
+        - hapi_option_parking
+    - key: dummy2
+      includes:
+        - placeholder_.*
+        - babies
