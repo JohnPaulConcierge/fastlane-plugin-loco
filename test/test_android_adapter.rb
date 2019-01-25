@@ -25,11 +25,11 @@ class AndroidAdapterTest < Minitest::Test
 
     written = adapter.to_xml strings, plurals
 
-    assert_equal STRING_COUNT,
+    assert_equal 27,
                  written.scan(/(?=<string name=)/).count,
                  'Not the right amount of written strings'
 
-    assert_equal PLURAL_COUNT,
+    assert_equal 8,
                  written.scan(/(?=<plurals name=)/).count,
                  'Not the right amount of written plurals'
 
@@ -44,6 +44,5 @@ class AndroidAdapterTest < Minitest::Test
     written_strings, written_plurals = adapter.parse written, '.xml'
 
     UI.user_error!('Sanity check failed') if (written_strings != strings) || (written_plurals != plurals)
-
   end
 end

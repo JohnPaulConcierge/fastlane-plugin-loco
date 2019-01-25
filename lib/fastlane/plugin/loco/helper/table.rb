@@ -57,6 +57,9 @@ module Loco
 
           strings, plurals = @adapter.parse result, extension
 
+          strings = project.filter strings
+          plurals = project.filter plurals
+
           @strings[locale] = (@strings[locale] || {}).merge(strings)
           @plurals[locale] = (@plurals[locale] || {}).merge(plurals)
         end

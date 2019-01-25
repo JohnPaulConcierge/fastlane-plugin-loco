@@ -18,18 +18,6 @@ module Loco
     attr_reader :includes
     attr_reader :excludes
 
-    def include?(key)
-      @excludes.each do |e|
-        return false if e.match(key)
-      end
-
-      @includes.each do |i|
-        return true if i.match(key)
-      end
-
-      @includes.empty?
-    end
-
     # Exports the locale for the corresponding extension
     #
     # @param [String] the locale
@@ -44,6 +32,24 @@ module Loco
 
       warn 'URL failed: ' + uri.to_s
       nil
+    end
+
+    def include?(key)
+      @excludes.each do |e|
+        return false if e.match(key)
+      end
+
+      @includes.each do |i|
+        return true if i.match(key)
+      end
+
+      @includes.empty?
+    end
+
+    # Filters a dictionary by including / excluding keys using the respective
+    # regexes
+    def filter(resource)
+      resource.select { |key, _value| include? key }
     end
 
     def to_s

@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
-STRING_COUNT = 27
-PLURAL_COUNT = 8
+TEST_DIRECTORY = 'test/results'
+LOCO_URL = 'https://localise.biz/api/export/locale'
+RES_DIR = 'test/res'
 
 def _check_parsed(strings, plurals)
   assert_equal STRING_COUNT,

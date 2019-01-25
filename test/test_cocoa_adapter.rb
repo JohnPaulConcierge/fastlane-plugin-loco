@@ -16,11 +16,11 @@ class CocoaAdapterTest < Minitest::Test
     written_s = adapter.to_strings strings
     written_p = adapter.to_stringsdict plurals
 
-    assert_equal STRING_COUNT,
+    assert_equal 27,
                  written_s.scan(/(?=" = ")/).count,
                  'Not the right amount of written strings'
 
-    assert_equal PLURAL_COUNT,
+    assert_equal 8,
                  written_p.scan(%r{(?=<key>NSStringLocalizedFormatKey</key>)}).count,
                  'Not the right amount of written plurals'
 

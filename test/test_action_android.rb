@@ -5,6 +5,7 @@ require 'fastlane/plugin/loco' # import the actual plugin
 require 'minitest/autorun'
 require 'webmock/minitest'
 require 'fileutils'
+require_relative 'shared'
 
 # Class for testing the android action for simple cases
 class ActionAndroidTest < Minitest::Test
@@ -15,17 +16,36 @@ class ActionAndroidTest < Minitest::Test
 
   # Delete generated files
   def teardown
-    FileUtils.remove_dir('test/results', true)
+    WebMock.reset!
+    FileUtils.remove_dir(TEST_DIRECTORY, true)
+  end
+
+  def make_table(locales: ['en'], projects: [{ 'key' => 'dummy1' }])
+    Loco::Table.new platform: Loco::PLATFORM_ANDROID,
+                    directory: TEST_DIRECTORY,
+                    locales: locales,
+                    projects: projects,
+                    mapping: nil
+  end
+
+  def stub(locale, key)
+    stub_request(:get, "#{LOCO_URL}/#{locale}.xml?key=#{key}")
+      .to_return(body: File.read("#{RES_DIR}/#{locale}.xml"))
   end
 
   # Simplest case test
   def test_simple
-    stub_request(:get, 'https://localise.biz/api/export/locale/en.xml?key=dummy1')
-      .to_return(body: File.read('test/res/en.xml'))
+    stub 'en', 'dummy1'
 
-    Fastlane::Actions::LocoAction.run(conf_file_path: 'test/res/LocoFile.simple.android.yml')
+    table = make_table
 
-    path = 'test/results/values/strings.xml'
+    table.load!
+
+    # TODO: test table content
+
+    table.write!
+
+    path = TEST_DIRECTORY + '/values/strings.xml'
     assert File.exist? path
 
     content = File.read path
@@ -39,5 +59,21 @@ class ActionAndroidTest < Minitest::Test
 
     assert_equal 27, lines.select { |line| line.strip.start_with? '<string name=' }.count
     assert_equal 8, lines.select { |line| line.strip.start_with? '<plurals name=' }.count
+  end
+
+  def test_include
+    stub 'en', 'dummy1'
+
+    projects = [{ 'key': 'dummy1', 'includes': ['city_.*'] }]
+
+    table = make_table projects: projects
+
+    table.load!
+
+    assert_equal 5, table.strings['en'].count
+    table.strings['en'].each do |key, _value|
+      assert key.start_with? 'city_', "#{key} does not start with city_"
+    end
+    assert_equal 0, table.plurals['en'].count
   end
 end
