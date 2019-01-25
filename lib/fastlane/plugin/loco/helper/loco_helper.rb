@@ -13,7 +13,6 @@ module Fastlane
       # as `Helper::LocoHelper.your_method`
       #
       def self.show_message; end
-
     end
   end
 end
