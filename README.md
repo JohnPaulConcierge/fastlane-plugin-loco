@@ -41,6 +41,80 @@ In its simplest form, a conf file just specifies:
     - key: dummy1
 ```
 
+### 1 Table from multiple projects
+
+The following configuration will pull the strings from 2 projects, merge the resources and output a single table. The way keys are overriden is based on the projects ordering, in the following example, strings in `dummy2` will override ones in `dummy1`.
+
+```
+---
+- locales:
+    - en
+    - fr
+  directory: app/res
+  platform: android
+  projects:
+    - key: dummy1
+    - key: dummy2
+```
+
+### Using multiple tables
+
+Below is the configuration to create mutliple tables, each based on a single project.
+
+It will create 2 tables, one with the default name and a second named `Other`. This will output `Other.strings/stringdict` on iOS and `other.xml` on Android.
+
+```
+---
+- platform: android
+- projects:
+    - key: dummy1
+  directory: app/res
+  locales:
+    - en
+    - fr
+- table: Other
+  projects:
+    - key: dummy2
+  directory: app/res
+  locales:
+    - en
+    - fr
+```
+
+The first item in the array is required and used to specify the defaults. This is then equivalent to
+
+```
+- platform: android
+  directory: app/res
+  locales:
+    - en
+    - fr
+- projects:
+    - key: dummy1
+- table: Other
+  projects:
+    - key: dummy2
+```
+
+### Including and excluding keys
+
+It is possible to add a list of regex to include and exclude at the project level. The following configuration will create 2 tables based on the same project, one containing only keys starting with `city_` and one containing the rest.
+
+```
+- platform: android
+  directory: app/res
+  locales:
+    - en
+    - fr
+- projects:
+    - key: dummy1
+    - include: city_.*
+- table: Other
+  projects:
+    - key: dummy1
+    - exclude: city_.*
+```
+
 <!-- ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
