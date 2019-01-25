@@ -60,6 +60,8 @@ module Loco
           strings = project.filter strings
           plurals = project.filter plurals
 
+          warn "Did not find any strings or plurals in #{project}" if strings.empty? && plurals.empty?
+
           @strings[locale] = (@strings[locale] || {}).merge(strings)
           @plurals[locale] = (@plurals[locale] || {}).merge(plurals)
         end

@@ -16,6 +16,9 @@ module Fastlane
           UI.message 'Loading ' + table.to_s
 
           table.load!
+
+          UI.message 'Found strings: ' + table.strings.map { |key, value| "#{key}: #{value.count}" }.join(', ')
+
           table.write!
         end
       end

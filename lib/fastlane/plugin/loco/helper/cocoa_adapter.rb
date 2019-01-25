@@ -73,7 +73,7 @@ module Loco
         format_key = value['NSStringLocalizedFormatKey']
 
         unless format_key =~ /^%#@[\w]*@$/
-          puts "Unsupported format key '#{format_key}'"
+          warn "Unsupported format key '#{format_key}'"
           next
         end
 
@@ -81,12 +81,12 @@ module Loco
 
         translations = value[format_key]
         if translations.nil?
-          puts 'Empty translation dict'
+          warn 'Empty translation dict'
           next
         end
 
         if translations.delete('NSStringFormatSpecTypeKey') != 'NSStringPluralRuleType'
-          puts 'Unsupported plural rule'
+          warn 'Unsupported plural rule'
           next
         end
 

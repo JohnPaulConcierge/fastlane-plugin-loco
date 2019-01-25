@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require 'fileutils'
+require 'spec_helper'
+
 describe Fastlane::Actions::LocoAction do
   describe '#run' do
     it 'loads and creates the right ios files' do
@@ -12,7 +15,20 @@ describe Fastlane::Actions::LocoAction do
         end
       end
 
+      output_path = 'test-results/spec'
+      # FileUtils.remove_dir output_path, true
+
       Fastlane::Actions::LocoAction.run(conf_file_path: 'spec/res/LocoFile.ios.yml')
+
+      # Checking that all files were created
+      %w[en fr].each do |locale|
+        %w[Localizable Other].each do |table|
+          %w[strings stringsdict].each do |extension|
+            path = File.join(output_path, "#{locale}.lproj/#{table}.#{extension}")
+            expect(File).to exist(path)
+          end
+        end
+      end
     end
   end
 end

@@ -4,7 +4,7 @@
     - en
     - fr
   directory: test-results/spec
-  platform: ios
+  platform: android
 - projects:
     - key: dummy1
       includes:
