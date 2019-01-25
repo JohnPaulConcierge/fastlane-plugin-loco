@@ -89,4 +89,20 @@ class ActionSimpleTest < Minitest::Test
     end
     assert_equal 0, table.plurals['en'].count
   end
+
+  def test_exclude
+    stub 'en', 'dummy1'
+
+    projects = [{ 'key': 'dummy1', 'excludes': ['city_.*', 'guests'] }]
+
+    table = make_table projects: projects
+
+    table.load!
+
+    assert_equal 22, table.strings['en'].count
+    table.strings['en'].each do |key, _value|
+      assert !key.start_with?('city_', "#{key} does not start with city_")
+    end
+    assert_equal 7, table.plurals['en'].count
+  end
 end
