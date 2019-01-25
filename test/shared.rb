@@ -5,11 +5,11 @@ LOCO_URL = 'https://localise.biz/api/export/locale'
 RES_DIR = 'test/res'
 
 def _check_parsed(strings, plurals)
-  assert_equal STRING_COUNT,
+  assert_equal 27,
                strings.count,
                'Not the right amount of strings'
 
-  assert_equal PLURAL_COUNT,
+  assert_equal 8,
                plurals.count,
                'Not the right amount of plurals'
 

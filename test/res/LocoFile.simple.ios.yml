@@ -1,8 +1,0 @@
----
-# Defaults
-- locales:
-    - en
-  directory: test/results
-  platform: ios
-  projects:
-    - key: dummy1
