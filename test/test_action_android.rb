@@ -92,5 +92,4 @@ class ActionAndroidTest < Minitest::Test
     end
     assert_equal 7, table.plurals['en'].count
   end
-
 end

@@ -28,7 +28,20 @@ module Loco
                              path: "/api/export/locale/#{locale}#{extension}",
                              query: URI.encode_www_form('key': @key))
       res = Net::HTTP.get_response(uri)
-      return res.body if res.code == '200'
+
+      if res.code == '200'
+        body = res.body
+
+        # Extracking charset because Net does not do it
+        content_type = res['Content-Type']
+        charset = /charset=([^ ;]*)/.match content_type
+        unless charset.nil?
+          body = body.force_encoding(charset.captures[0])
+                     .encode('utf-8')
+        end
+
+        return body
+      end
 
       warn 'URL failed: ' + uri.to_s
       nil
