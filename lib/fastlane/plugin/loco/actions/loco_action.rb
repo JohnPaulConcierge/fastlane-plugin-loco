@@ -20,7 +20,12 @@ module Fastlane
           UI.message 'Found strings: ' + table.strings.map { |key, value| "#{key}: #{value.count}" }.join(', ')
 
           table.write!
+
+          UI.success 'Finished writing table'
         end
+
+        # Extra nil to prevent returning a result
+        nil
       end
 
       def self.description

@@ -56,10 +56,10 @@ module Loco
 
       files = Dir[directory]
       files.each do |file|
-        ext = ::File.extname(file)
+        ext = File.extname(file)
         next unless allowed_extensions.include? ext
 
-        parsed_strings, parsed_plurals = parse(::File.read(file), ext)
+        parsed_strings, parsed_plurals = parse(File.read(file), ext)
 
         strings = strings.merge(parsed_strings)
         plurals = plurals.merge(parsed_plurals)
