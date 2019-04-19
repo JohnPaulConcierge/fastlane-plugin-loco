@@ -16,7 +16,8 @@ module Loco
                    table: '',
                    locales: ['en'],
                    projects:,
-                   mapping: nil)
+                   mapping: nil,
+                   fallback: nil)
       @directory = directory
       @table = table
       @locales = locales
@@ -24,6 +25,7 @@ module Loco
       @projects = projects.map do |i|
         Project.new(i.each_with_object({}) { |(k, v), memo| memo[k.to_sym] = v; })
       end
+      @fallback = fallback
 
       if platform == PLATFORM_ANDROID
         @adapter = AndroidAdapter.new
@@ -49,7 +51,7 @@ module Loco
     def load_locale!(locale)
       @projects.each do |project|
         @adapter.allowed_extensions.each do |extension|
-          result = project.export locale, extension
+          result = project.export locale, extension, @fallback
 
           if result.nil?
             raise "Could not load project #{project} with extension #{extension} and locale #{locale}"

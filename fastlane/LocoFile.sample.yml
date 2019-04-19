@@ -9,6 +9,7 @@
   mapping:
     en: en
     zh-hant-tw: rTW
+  fallback: en
 # This will create files named `table1`
 - table: Table1
   # Using the projects below

@@ -22,11 +22,15 @@ module Loco
     #
     # @param [String] the locale
     # @param [String] the extension, must include the `.`
-    def export(locale, extension)
+    def export(locale, extension, fallback)
+      query = { 'key': @key }
+
+      query['fallback'] = fallback unless fallback.nil? || fallback.empty?
+
       uri = URI::HTTPS.build(scheme: 'https',
                              host: 'localise.biz',
                              path: "/api/export/locale/#{locale}#{extension}",
-                             query: URI.encode_www_form('key': @key))
+                             query: URI.encode_www_form(query))
       res = Net::HTTP.get_response(uri)
 
       if res.code == '200'
